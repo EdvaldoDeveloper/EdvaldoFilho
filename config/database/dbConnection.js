@@ -8,7 +8,7 @@ const Sequelize = require('sequelize');
 // git remote add origin https://github.com/EdvaldoDeveloper/EdvaldoFilho.git
 // git push -u origin main;
 
-const connection = new Sequelize(process.env.DB_DATABASE, process.env.DB_USER, '', {
+const connection = new Sequelize(process.env.DB_DATABASE, process.env.DB_USER, process.env.DB_PASSWORD, {
     host: process.env.DB_HOST,
     dialect: process.env.DB_CONNECTION
 });
