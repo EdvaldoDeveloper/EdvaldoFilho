@@ -1,10 +1,12 @@
 require('dotenv').config();
 const Sequelize = require('sequelize');
 
-// const connection = new Sequelize('iscodec1_mensagem', 'iscodec1_devEdvaldo', 'pr06390721', {
-//     host: 'localhost',
-//     dialect: 'mysql'
-// });
+// git init
+// git add README.md
+// git commit -m "first commit"
+// git branch -M main
+// git remote add origin https://github.com/EdvaldoDeveloper/EdvaldoFilho.git
+// git push -u origin main;
 
 const connection = new Sequelize(process.env.DB_DATABASE, process.env.DB_USER, '', {
     host: process.env.DB_HOST,
